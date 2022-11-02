@@ -1,0 +1,225 @@
+#Header {
+
+    /* min-height: 100vh; */
+    width: 100%;
+    display: flex;
+    padding-top: 150px;
+
+}
+
+.headerContentLeft {
+    width: 50%;
+    font-size: 18px;
+}
+
+.headerContentLeft h3 {
+    text-align: left;
+    font-size: 2.8em;
+    -webkit-text-fill-color: rgba(218, 165, 32, 0.819);
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.headerContentLeft p {
+    color: whitesmoke;
+    font-size: 1.3em;
+    margin: 10px 0px;
+    padding: 4px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-fill-color: #fff;
+    margin-bottom: 90px;
+}
+
+/* *    Animation */
+.outer__button {
+    background-color: rgba(0, 0, 0, 0.389);
+    border: 1px solid white;
+    padding: 19px 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 0.7em;
+    transition: all 1s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+.outer__button a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+/* LEFT TO RIGHT */
+.button__left-right {
+    border: 2px solid white;
+    background: linear-gradient(to right, var(--primary) 50%, rgba(17, 25, 40, 0.113) 50%);
+    background-size: 200% 100%;
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.519);
+    background-position: right;
+    transition: all .35s ease-out;
+}
+
+.button__left-right:hover {
+    background-position: left;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.button__left-right:hover a {
+    color: black;
+}
+
+
+
+.headerContentRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+
+.headerContentRight .logo {
+    position: absolute;
+    top: 14%;
+    height: 300px;
+    opacity: 0.7;
+    border-radius: 50%;
+    z-index: 2;
+    transition: animation 0.4s ease;
+    border-radius: 50%;
+}
+
+.headerContentRight .logo:hover {
+    transition: all 0.4s ease;
+    -webkit-animation: rotate 15s normal linear infinite;
+    animation: rotate 15s normal linear infinite;
+}
+
+.headerContentRight .back {
+    position: absolute;
+    top: 25px;
+    height: 400px;
+    border-radius: 50%;
+    -webkit-animation: rotate 15s normal linear infinite;
+    animation: rotate 15s normal linear infinite;
+    border-radius: 50%;
+}
+
+
+
+.headerContentRight .back2 {
+    position: absolute;
+    top: 0;
+    height: 450px;
+    border-radius: 50%;
+    -webkit-animation: rotate 20s normal linear infinite;
+    animation: rotate 20s normal linear infinite;
+}
+
+.headerContentRight .back2:hover {
+    animation: none;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+@media screen and (max-width: 968px) {
+
+    #Header {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10px 0;
+        padding-top: 100px;
+
+    }
+
+
+    .headerContentLeft {
+        /* border: 1px solid red; */
+        font-size: 15px;
+        width: 100%;
+        /* padding: 10px; */
+        /* display: none; */
+        text-align: center;
+
+    }
+
+    .headerContentLeft h3 {
+        /* border: 1px solid red; */
+        text-align: center;
+        color: gold !important;
+    }
+
+    .headerContentRight {
+        display: none;
+        top: 100px;
+        left: 100px;
+        opacity: 0.7;
+        position: absolute;
+        top: 200px;
+
+    }
+
+    .headerContentRight .logo {
+        top: 70px;
+        height: 180px;
+        /* display: none; */
+    }
+
+    .headerContentRight .back {
+
+        /* display: none; */
+
+        height: 275px;
+    }
+
+    .headerContentRight .back2 {
+        /* border: 2px solid red; */
+        top: 52px;
+        height: 220px;
+    }
+
+    .outer__button {
+        margin: auto;
+    }
+}

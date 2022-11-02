@@ -1,0 +1,230 @@
+#Nav {
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 4%;
+    font-size: 20px;
+    z-index: 5;
+}
+
+#Nav.active {
+    /* background: linear-gradient(#010541, #010326); */
+    background-color: #010326fe;
+
+    -webkit-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 6px 1px rgba(242, 207, 102, 0.813);
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+}
+
+.top a:hover {
+    color: gold;
+}
+
+.top.active {
+    display: inline-block;
+    font-size: 40px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo img {
+    height: 70px;
+    margin: 3px;
+}
+
+.logoContent h1 {
+    color: #f2a526;
+    font-weight: 500;
+    font-size: 1.7em;
+    border-bottom: 2px solid #f2a526;
+    line-height: 28px;
+}
+
+.logoContent h2 {
+    color: #f2a526;
+    font-weight: 300;
+    font-size: 0.65em;
+    letter-spacing: 1.5px;
+}
+
+/* * ------------ LINKS ---------------- */
+.links {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.links ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.links ul li a {
+    color: white;
+    transition: color 0.5s ease;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.links ul li a:hover {
+    color: var(--primary);
+}
+
+#Nav select {
+    background-color: #010326;
+    padding: 10px;
+    margin-left: 15px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(242, 207, 102, 1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(242, 207, 102, 1);
+    box-shadow: 0px 0px 1px 1px rgba(242, 207, 102, 1);
+    color: white;
+}
+
+#Nav select option {
+    background-color: 010326;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mobileLinks {
+    display: none;
+}
+
+.humberger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #Nav {
+
+        justify-content: flex-start;
+        align-content: center;
+        padding: 5px 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .logo img {
+        height: 50px;
+        margin: 5px;
+    }
+
+    .logoContent h2 {
+        font-size: 0.6em;
+    }
+
+    .links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        display: flex;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100%;
+        background: radial-gradient(#010541e5, #010326e6);
+        transition: 0.5s ease;
+    }
+
+    .links ul {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+
+    .links.open {
+        right: 0;
+    }
+
+    .humberger {
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+        transition: 0.5s ease;
+        border-radius: 10px;
+    }
+
+    .line.line1:nth-child(1) {
+        border-radius: 10px;
+        transform: rotate(45deg);
+        translate: 0px 8px;
+        border: 1px solid rgba(218, 165, 32, 0.298);
+
+    }
+
+    .line.line1:nth-child(2) {
+        display: none;
+    }
+
+    .line.line1:nth-child(3) {
+        /* background-color: palevioletred; */
+        border: 1px solid rgba(218, 165, 32, 0.391);
+
+        transform: rotate(135deg);
+        border-radius: 10px;
+    }
+
+
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,104 @@
+#blogSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+#blogSection>img {
+    height: 80px;
+}
+
+#blog {
+    /* min-height: 80vh; */
+    width: 100%;
+
+}
+
+
+
+.mySwiper {
+    /* border: 1px solid green; */
+    padding: 10px;
+
+}
+
+.swiperSlide {
+
+    /* border: 5px solid purple; */
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.072);
+    border-radius: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+.swiperSlide img {
+    width: 100%;
+}
+
+.swiperSlide .category {
+    margin: 10px 0;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swiperSlide .category span {
+    background-color: rgb(94, 94, 143);
+    font-size: 14px;
+    padding: 4px;
+    margin: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+}
+
+.swiperSlide .heading {
+    margin: 5px;
+    font-size: 1.4em;
+    font-weight: 500;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.author {
+    font-size: 1.5em;
+    color: rgb(208, 206, 206);
+    font-weight: 100;
+    margin: 5px;
+}
+
+.swiperSlide .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.swiperSlide .bottom p {
+    font-size: 15px;
+    color: gainsboro;
+}
+
+.swiperSlide .bottom button,
+a {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.swiperSlide .bottom button a {
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.swiperSlide .bottom button a:hover {
+    color: gold;
+}

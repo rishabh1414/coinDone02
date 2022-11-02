@@ -1,0 +1,10 @@
+#about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+}
+
+#about img {
+    height: 50px;
+}

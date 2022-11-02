@@ -1,0 +1,149 @@
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#team img {
+    height: 80px;
+}
+
+.teamContent {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.teamMember {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.019);
+    border: 0.6px solid rgba(128, 128, 128, 0.148);
+    transition: 1s ease;
+    padding: 25px 15px;
+    font-size: 20px;
+}
+
+.teamMember:hover {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(242, 207, 102, 0.9);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(242, 207, 102, 0.9);
+    box-shadow: 0px 0px 40px 1px rgba(242, 207, 102, 0.6);
+    transform: translateY(-8px);
+}
+
+.teamMember>h3 {
+    font-size: 1.2em;
+}
+
+.teamMember>p {
+    font-size: 0.7em;
+    color: gray;
+}
+
+#imgHolder {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    border: 2px solid gold;
+}
+
+#imgHolder .teamImg {
+    height: 100%;
+}
+
+
+
+.contactLinks {
+    position: absolute;
+    background-color: rgba(255, 217, 0, 0.471);
+
+    padding-top: 60px;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    z-index: 1;
+    transition: 0.2s ease;
+    font-size: 20px;
+}
+
+.contactLinks p a {
+    z-index: 3;
+    color: white;
+    font-size: 0.85em;
+}
+
+.contactLinks p a:hover {
+    color: #010326e1;
+    font-weight: 600;
+}
+
+.social {
+    position: absolute;
+    bottom: -40px;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 30px;
+    transition: 0.2s ease;
+
+}
+
+.socialIcon {
+    color: gold;
+}
+
+.socialIcon a:hover {
+    color: #010326e1;
+}
+
+#imgHolder:hover .contactLinks {
+    top: 0;
+}
+
+#imgHolder:hover .social {
+    bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #team img {
+        height: 50px;
+    }
+
+    .teamContent {
+        flex-direction: column;
+        border-right: 2px dashed #f2cf6681;
+    }
+
+    .teamMember {
+        margin: 20px 0;
+        padding: 25px 45px;
+    }
+
+    .contactLinks {
+
+        padding-top: 30px;
+    }
+
+    .contactLinks p a {
+        font-size: 13px;
+    }
+
+    #imgHolder {
+        height: 150px;
+        width: 150px;
+    }
+}

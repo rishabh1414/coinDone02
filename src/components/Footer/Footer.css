@@ -1,0 +1,153 @@
+#footer {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 4px;
+}
+
+.footerContent {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.576);
+
+
+}
+
+.footerContent a {
+    transition: 0.5s ease;
+}
+
+.footerContent a:hover {
+    color: gold;
+}
+
+.footerLeft {
+    width: 50%;
+    display: flex;
+}
+
+.footerHeading {
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 2px 10px;
+    margin: 10px 0;
+    border-left: 4px solid gold;
+}
+
+.footerAbout {
+    width: 70%;
+}
+
+.footerAbout h4 {
+    width: 70%;
+    color: goldenrod;
+}
+
+.footerAbout p {
+    font-size: 0.8em;
+    margin: 20px 0;
+}
+
+.footerlinks {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    font-size: 0.8em;
+}
+
+.footerlinks>.linksContainer {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerRight {
+    width: 50%;
+    height: 100%;
+}
+
+.footerRight {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+
+.footerOther {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icons {
+    margin: 20px 0;
+}
+
+.icons a {
+    margin: 10px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.icons a:hover {
+    background-color: rgba(255, 255, 255, 0.485);
+    color: black;
+}
+
+.footerBottom {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerBottom p {
+    font-size: 0.7em;
+}
+
+.footerBottom p span {
+    color: gold;
+}
+
+@media screen and (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footerLeft {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footerAbout {
+        width: 100%;
+    }
+
+    .footerlinks {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footerRight {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .icons a {
+        margin: 7px;
+        padding: 3px 8px;
+        cursor: pointer;
+    }
+
+}

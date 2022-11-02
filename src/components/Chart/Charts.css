@@ -1,0 +1,25 @@
+#chart {
+    min-height: 100vh;
+}
+
+.piechart {
+    margin: auto;
+    height: 550px;
+    width: 590px;
+    display: flex;
+}
+
+.Doughnut {
+    height: 100% !important;
+    padding: 10px;
+    margin: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .piechart {
+
+        height: 350px;
+        width: 350px;
+
+    }
+}

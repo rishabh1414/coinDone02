@@ -1,0 +1,115 @@
+#service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#service img {
+    height: 80px;
+}
+
+.service__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.service__content .left {
+    width: 50%;
+    height: 500px;
+    background-image: url('../../assets/aboutImg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.service__content .right {
+    width: 50%;
+    border-left: 1.5px dashed #f2cf6681;
+    padding: 30px;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.011);
+    background-color: rgba(255, 255, 255, 0.019);
+    font-size: 20px;
+    border: 0.6px solid rgba(128, 128, 128, 0.148);
+    transition: 1s ease;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.content:hover {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(242, 207, 102, 0.9);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(242, 207, 102, 0.9);
+    box-shadow: 0px 0px 10px 1px rgba(242, 207, 102, 0.9);
+    transform: translateY(-2px);
+}
+
+.content h3 {
+    color: var(--primary);
+    font-size: 1.2em;
+    font-weight: 300;
+    position: relative;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 0.65em;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+/* .topLine::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+} */
+
+
+@media screen and (max-width: 768px) {
+    #service {
+        margin: 100px 0;
+        height: auto;
+    }
+
+    #service img {
+        height: 50px;
+    }
+
+    .service__content {
+        flex-direction: column;
+    }
+
+    .service__content .left {
+        width: 100%;
+    }
+
+    .service__content .right {
+        width: 90%;
+        border-left: 2px dashed #f2cf6681;
+    }
+
+    .content {
+        margin: 30px 0;
+    }
+}
+
+.css-3d-text {
+    font-size: 58px;
+    color: #f2cf66;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(115, 80, 0),
+        -1px 1px 0 rgb(-13, -48, 0),
+        -2px 2px 0 rgb(-140, -175, 0),
+        -3px 3px 2px rgba(250, 224, 145, 0.35),
+        -3px 3px 1px rgba(250, 224, 145, 0.5),
+        0px 0px 2px rgba(250, 224, 145, .2);
+}

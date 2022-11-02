@@ -1,0 +1,212 @@
+#marketCap {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+
+#marketCap>img {
+    height: 80px;
+    margin: auto;
+}
+
+.TableHeading {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.MarketCapHead input {
+    padding: 10px;
+    max-width: 40%;
+    background-color: rgba(255, 255, 255, 0.108);
+    color: white;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 200;
+    outline: none;
+    border: 1px solid rgba(255, 217, 0, 0.453);
+}
+
+table {
+    border: 1px solid rgba(255, 217, 0, 0.146);
+    /* border-radius: 10px;  */
+    width: 100%;
+    margin: auto;
+    background-color: #1a202e74;
+    color: white;
+    text-align: left;
+    border-spacing: 0;
+    padding: 5px;
+}
+
+.TableHolder {
+    height: 100vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.divName {
+    max-width: 250px;
+}
+
+/* width */
+.TableHolder::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.TableHolder::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.TableHolder::-webkit-scrollbar-thumb {
+    background: rgba(255, 217, 0, 0.748);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.TableHolder::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 217, 0, 0.493);
+}
+
+.tableHead {
+    position: sticky;
+    top: 0px;
+    left: 0;
+    height: 50px;
+    padding: 15px;
+    background-color: rgb(255, 217, 0);
+    margin: 30px;
+}
+
+.tableHead tr>th {
+    text-align: center;
+}
+
+tbody .row:hover {
+    background-color: rgba(255, 255, 255, 0.067);
+    cursor: pointer;
+}
+
+tr,
+td {
+    border-bottom: 1px solid rgba(255, 217, 0, 0.261);
+}
+
+.sno {
+    /* min-width: 40px; */
+    text-align: center;
+}
+
+.rank {
+    text-align: center;
+    color: rgb(212, 211, 211);
+}
+
+.coinName {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.755);
+    transition: 0.5s ease;
+}
+
+.coinName>img {
+    transition: 0.5s ease;
+}
+
+.coinName:hover {
+    color: gold;
+}
+
+.coinName:hover img {
+    scale: 1.2;
+}
+
+
+
+.coinName>b {
+    font-size: 1em;
+}
+
+.coinImg {
+    height: 50px;
+    margin: 10px;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-red {
+    color: red;
+}
+
+@media screen and (max-width:768px) {
+    #marketCap {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+
+
+    .row>td {
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        min-width: 200px;
+    }
+
+    .row .small {
+        min-width: 100px;
+    }
+
+    .row .sparkline {
+        min-width: 150px;
+    }
+
+    .table {
+        font-size: 5px;
+        width: 100%;
+    }
+
+    td {
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .coinName {
+        flex-direction: column;
+    }
+
+    .coinImg {
+        height: 15px;
+    }
+
+    .rank {
+        position: sticky;
+        top: 52px;
+        left: 0;
+        text-align: center;
+        background-color: #1a202e;
+        min-width: 20px !important;
+    }
+
+    .divName {
+        position: sticky;
+        top: 52px;
+        left: 30px;
+        background-color: #1a202e;
+        text-align: centers;
+        min-width: 100px !important;
+        padding: 5px !important;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+
+  <title>COINDONE </title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    const disabledKeys = [67, 73, 85, 88]; // keys code that will be disabled
+    const showAlert = e => {
+      e.preventDefault(); // preventing its default behaviour
+
+    }
+    document.addEventListener("contextmenu", e => {
+      // showAlert(e); // calling showAlert() function on mouse right click
+    });
+    document.addEventListener("keydown", e => {
+      // calling showAlert() function, if the pressed key matched to disabled keys
+      if (e.ctrlKey && disabledKeys.includes(e.keyCode)) {
+        showAlert(e);
+      }
+    });
+  </script>
+</body>
+
+</html>
