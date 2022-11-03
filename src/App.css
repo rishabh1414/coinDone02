@@ -80,7 +80,7 @@ body {
 
 @media screen and (max-width: 768px) {
     body {
-        padding: 0px;
+        padding: 0% !important;
         overflow: hidden;
         overflow-y: scroll;
         overflow-x: hidden;
