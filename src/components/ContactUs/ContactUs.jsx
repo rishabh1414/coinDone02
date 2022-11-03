@@ -101,7 +101,7 @@ const ContactUs = () => {
           </div>
 
           <div className="right">
-            <h4>Visit Our Company</h4>
+            <h4 className="footerHeading">Visit Our Company</h4>
             <div className="box location">
               <span className="icon">
                 <TfiLocationPin />

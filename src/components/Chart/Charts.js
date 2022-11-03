@@ -8,7 +8,7 @@ function Charts() {
   return (
     <React.Fragment>
       <section id="chart">
-        <h1 className="mt-3">Coindone's Asset Allocation</h1>
+        <h1 className="mt-3 footerHeading">Coindone's Asset Allocation</h1>
         <div className="row">
           <div className="piechart ">
             <Doughnut

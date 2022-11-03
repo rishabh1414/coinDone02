@@ -13,7 +13,7 @@
 
 #Nav.active {
     /* background: linear-gradient(#010541, #010326); */
-    background-color: #010326fe;
+    background-color: #111434;
 
     -webkit-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
@@ -25,7 +25,6 @@
     bottom: 20px;
     right: 20px;
     display: none;
-
 }
 
 .top a:hover {
@@ -45,8 +44,13 @@
 }
 
 .logo img {
+    background-color: #020462;
     height: 70px;
+    border-radius: 50%;
     margin: 3px;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(242, 164, 38, 0.9);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(242, 164, 38, 0.9);
+    box-shadow: 0px 0px 5px 0px rgba(242, 164, 38, 0.9);
 }
 
 .logoContent h1 {

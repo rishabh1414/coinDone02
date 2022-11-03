@@ -50,7 +50,7 @@ const CoinTable02 = () => {
     <div id="marketCap">
       <img src={market} alt="" />
       <div className="MarketCapHead">
-        <h4 className="TableHeading">Search Crypto Coin</h4>
+        <h4 className="TableHeading footerHeading">Search Crypto Coin</h4>
         <form>
           <input
             onKeyUp={optimiseFun}
