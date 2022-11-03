@@ -14,7 +14,7 @@
 #Nav.active {
     /* background: linear-gradient(#010541, #010326); */
     background-color: #111434;
-
+    background: radial-gradient(#1f2262, #03073b);
     -webkit-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 6px 1px rgba(242, 207, 102, 0.813);
@@ -44,13 +44,12 @@
 }
 
 .logo img {
-    background-color: #020462;
-    height: 70px;
-    border-radius: 50%;
-    margin: 3px;
-    -webkit-box-shadow: 0px 0px 17px 0px rgba(242, 164, 38, 0.9);
-    -moz-box-shadow: 0px 0px 17px 0px rgba(242, 164, 38, 0.9);
-    box-shadow: 0px 0px 2px 0px rgba(242, 164, 38, 0.9);
+    height: 60px;
+}
+
+.logoLink {
+    margin: 0;
+    padding: 0;
 }
 
 .logoContent h1 {
@@ -150,7 +149,7 @@
     }
 
     .logo img {
-        height: 50px;
+        height: 40px;
         margin: 5px;
     }
 

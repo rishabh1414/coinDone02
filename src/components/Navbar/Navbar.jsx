@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/3dLogo1.png";
+import logo from "../../assets/CoinLOGO.png";
 import "./Navbar.css";
 import { BsFileArrowUp } from "react-icons/bs";
 import { CryptoState } from "../../CryptoContext";
@@ -38,11 +38,13 @@ const Navbar = () => {
         </a>
       </div>
       <div className="logo">
-        <img src={logo} alt="" />
-        <div className="logoContent">
+        <a className="logoLink" href="#">
+          <img src={logo} alt="" />
+        </a>
+        {/* <div className="logoContent">
           <h1>COINDONE</h1>
           <h2>Digital Asset Management</h2>
-        </div>
+        </div> */}
       </div>
       <div className={`links ${toggleClass}`}>
         <ul>

@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 import { BsTwitter, BsLinkedin } from "react-icons/bs";
+import logo from "../../assets/CoinLOGO.png";
+
 import "./Footer.css";
 
 export const Footer = () => {
@@ -10,7 +12,11 @@ export const Footer = () => {
       <div className="footerContent">
         <div className="footerLeft">
           <div className="footerAbout">
-            <h4 className="footerHeading">COINDONE</h4>
+            <h4 className="footerHeading">
+              <a href="#">
+                <img src={logo} alt="" />
+              </a>
+            </h4>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
               adipisci nulla vitae quas facere, animi et ex maiores, eius
