@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/3dLogo1.png";
 import "./Navbar.css";
 import { BsFileArrowUp } from "react-icons/bs";
 import { CryptoState } from "../../CryptoContext";
@@ -23,7 +23,9 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
   }, []);
-
+  useEffect(() => {
+    setBtnState(false);
+  }, [currency]);
   let toggleClass = btnState ? "open" : null;
   let cross = btnState ? "line1" : null;
   let activeClass = navbar ? "active" : null;
@@ -51,7 +53,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a href="#about" onClick={() => setBtnState(false)}>
+            <a href="#service" onClick={() => setBtnState(false)}>
               About Us
             </a>
           </li>
