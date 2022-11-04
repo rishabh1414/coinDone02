@@ -45,37 +45,40 @@
 
 .logo img {
     height: 60px;
+    border-radius: 50%;
+    margin: 0 5px;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255, 202, 42, 0.9);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(255, 202, 42, 0.9);
+    box-shadow: 0px 0px 5px 0px rgba(255, 202, 42, 0.9);
 }
 
-.logoLink {
-    margin: 0;
-    padding: 0;
-}
+
+
 
 .logoContent h1 {
-    color: #f2a526;
-    /* font-weight: 500; */
+    font-weight: 500;
     font-size: 1.7em;
     border-bottom: 2px solid #f2a526;
     line-height: 28px;
-    text-shadow: 0px 0px 0 rgb(217, 139, 13),
-        -1px -1px 0 rgb(192, 114, 0),
-        -2px -2px 0 rgb(167, 89, 0),
-        -3px -3px 2px rgba(242, 164, 38, 0),
-        -3px -3px 1px rgba(242, 164, 38, 0.5),
-        0px 0px 2px rgba(242, 164, 38, .2);
+    text-shadow: 0px 0px 0 rgb(192, 114, 0),
+        -1px 0px 0 rgb(142, 64, 0),
+        -2px 0px 1px rgba(0, 0, 0, 0.6),
+        -2px 0px 1px rgba(0, 0, 0, 0.5),
+        0px 0px 1px rgba(0, 0, 0, .2);
+    color: #ffc82a;
+
 }
 
 .logoContent h2 {
-    color: #f2a526;
     font-weight: 300;
     font-size: 0.65em;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     text-shadow: 0px 0px 0 rgb(212, 134, 8),
         0px -1px 0 rgb(182, 104, 0),
         0px -2px 1px rgba(242, 164, 38, 0),
         0px -2px 1px rgba(242, 164, 38, 0.5),
         0px 0px 1px rgba(242, 164, 38, .2);
+    color: #ffc82a;
 }
 
 /* * ------------ LINKS ---------------- */

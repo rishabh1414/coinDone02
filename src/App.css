@@ -36,13 +36,14 @@ a {
 
 body {
     font-family: 'Cormorant Upright', serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* background-color: #1b1e3f;  best 1*/
-    background-color: #010326;
-    background: radial-gradient(#1f2262, #03073b);
+    /* background: radial-gradient(#1f2262, #03073b); */
     background-color: #1b1e3f;
+    background-color: #010432;
 
     color: #fff;
     padding: 0 10%;
