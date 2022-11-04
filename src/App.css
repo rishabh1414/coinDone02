@@ -41,7 +41,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* background-color: #1b1e3f;  best 1*/
-    /* background: radial-gradient(#1f2262, #03073b); */
+    background: radial-gradient(#1f2262, #03073b);
     background-color: #1b1e3f;
     background-color: #010432;
 
