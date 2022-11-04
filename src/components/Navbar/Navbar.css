@@ -13,8 +13,8 @@
 
 #Nav.active {
     /* background: linear-gradient(#010541, #010326); */
-    /* background: radial-gradient(#1f2262, #03073b); */
     background-color: #010432;
+    background: radial-gradient(#1f2262, #03073b);
     -webkit-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 11px 49px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 6px 1px rgba(242, 207, 102, 0.813);
